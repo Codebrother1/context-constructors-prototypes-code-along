@@ -238,7 +238,15 @@ function Person(name, age, hometown, email, friends) {
 }
 
 // Code here
+Person.prototype.addFriend = function(newFriend){
+this.friends.push(newFriend);
+}
 
+Person.prototype.removeFriend = function(badFriend){
+  let index = this.friends.findIndex(element => element === badFriend)
+  this.friends.splice(index,1)
+
+}
 
 
 ////////// PROBLEM 12 //////////
