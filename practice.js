@@ -35,6 +35,8 @@ let user1 = {
 
 const getUsername = function () {
     // Code here
+    return this.username;
+
 };
 
 const username = getUsername.call(user1);
@@ -60,7 +62,7 @@ function getOtherUsername() {
 };
 
 // Code here
-
+const otherUsername = getOtherUsername.call(user2);
 
 
 ////////// PROBLEM 4 //////////
