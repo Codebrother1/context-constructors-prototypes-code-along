@@ -78,7 +78,8 @@ const otherUsername = getOtherUsername.call(user2);
 
 // Code here
 
-
+const username1 = getOtherUsername.call(user1)
+const username2 = getOtherUsername.call(user2)
 
 ////////// PROBLEM 5 //////////
 
