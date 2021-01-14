@@ -11,6 +11,9 @@ let user = {
 	username: "bencallis",
 	email: "bencallis1@gmail.com",
     // Code here
+    getUserName: function(){
+      return this.username;
+    }
 };
 
 
