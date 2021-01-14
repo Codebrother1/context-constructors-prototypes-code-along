@@ -179,7 +179,16 @@ function CarMaker (make, model, year) {
 
 // Code here
 
+function Player(name, age, team, pointsScored){
+  this.name = name;
+  this.age = age;
+  this.team = team;
+  this.pointsScored = pointsScored;
+  this.addPoints = function(num){
+    return this.pointsScored += num;
+  }
 
+}
 
 ////////// PROBLEM 10 //////////
 
@@ -195,14 +204,16 @@ function Restaurant(name, type, stars) {
 	this.type = type;
     this.stars = stars;
     
-    this.addStars = function (num) {
-        this.stars += num;
-        return this.stars;
-    };
+    // this.addStars = function (num) {
+    //     this.stars += num;
+    //     return this.stars;
+    // };
 }
 
 // Code here
-
+Restaurant.prototype.addStars = function(num){
+return this.stars += num;
+}
 
 
 ////////// PROBLEM 11 //////////
