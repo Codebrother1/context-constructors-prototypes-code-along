@@ -101,7 +101,7 @@ function add(a, b, c) {
 
 // Code here
 
-
+const result = add.apply(obj, nums);
 
 ////////// PROBLEM 6 //////////
 
@@ -122,7 +122,7 @@ const getName = function () {
 };
 
 // Code here
-
+const name = getName.bind(favRapper);
 
 
 ////////// PROBLEM 7 //////////
