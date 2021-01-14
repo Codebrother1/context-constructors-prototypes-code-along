@@ -267,7 +267,22 @@ Person.prototype.removeFriend = function(badFriend){
 
 // Code here
 
+function User(name, age, email, savedPosts){
+  this.name = name;
+  this.age = age;
+  this.email = email;
+  this.savedPosts = savedPosts;
 
+}
+
+User.prototype.addSavedPost = function(id, title, rating){
+  let newPost = {
+    id,
+    title,
+    rating
+  }
+  this.savedPosts.push(newPost)
+}
 
 ////////// PROBLEM 13 //////////
 
