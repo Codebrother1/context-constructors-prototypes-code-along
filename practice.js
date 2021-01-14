@@ -136,6 +136,9 @@ const name = getName.bind(favRapper);
 
 function Car (color, make, year){
     // Code here
+    this.color = color;
+    this.make = make;
+    this.year = year;
 }
 
 
@@ -156,6 +159,9 @@ function CarMaker (make, model, year) {
     this.move = 0;
     
     // Code here
+    this.moveCar = function(){
+      this.move += 10;
+    }
 };
 
 
